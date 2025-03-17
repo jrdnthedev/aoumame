@@ -19,7 +19,7 @@ export default function Gallery() {
             <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {photos.map((image: any) => (
                     <li key={image.id} style={{ position: "relative", height: '200px' }}  >
-                        <Link href={`/photo/${image.id}`}>
+                        <Link href={`/photo/${image.id}`} scroll={false}>
                             <Image
                                 className="rounded-lg h-auto max-w-full"
                                 src={image.urls.full}
